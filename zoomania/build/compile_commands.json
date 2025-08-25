@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -IC:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/include -g -std=gnu++11 -o CMakeFiles\\sdl_basic.dir\\main.cpp.obj -c C:\\Users\\nates\\OneDrive\\Documents\\repos\\nates-playground\\zoomania\\main.cpp",
+  "file": "C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/main.cpp",
+  "output": "C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/build/CMakeFiles/sdl_basic.dir/main.cpp.obj"
+}
+]

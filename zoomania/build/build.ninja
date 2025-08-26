@@ -49,13 +49,13 @@ cmake_ninja_workdir = C$:/Users/nates/OneDrive/Documents/repos/nates-playground/
 
 build cmake_object_order_depends_target_sdl_basic: phony || .
 
-build CMakeFiles/sdl_basic.dir/main.cpp.obj: CXX_COMPILER__sdl_basic_unscanned_Debug C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/main.cpp || cmake_object_order_depends_target_sdl_basic
+build CMakeFiles/sdl_basic.dir/src/main.cpp.obj: CXX_COMPILER__sdl_basic_unscanned_Debug C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/src/main.cpp || cmake_object_order_depends_target_sdl_basic
   CONFIG = Debug
-  DEP_FILE = CMakeFiles\sdl_basic.dir\main.cpp.obj.d
+  DEP_FILE = CMakeFiles\sdl_basic.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -IC:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/include
+  INCLUDES = -IC:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/src -IC:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/include -IC:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/src/images
   OBJECT_DIR = CMakeFiles\sdl_basic.dir
-  OBJECT_FILE_DIR = CMakeFiles\sdl_basic.dir
+  OBJECT_FILE_DIR = CMakeFiles\sdl_basic.dir\src
 
 
 # =============================================================================
@@ -65,10 +65,10 @@ build CMakeFiles/sdl_basic.dir/main.cpp.obj: CXX_COMPILER__sdl_basic_unscanned_D
 #############################################
 # Link the executable C:\Users\nates\OneDrive\Documents\repos\nates-playground\zoomania\bin\sdl_basic.exe
 
-build C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/bin/sdl_basic.exe: CXX_EXECUTABLE_LINKER__sdl_basic_Debug CMakeFiles/sdl_basic.dir/main.cpp.obj | C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3.dll.a C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3_test.a
+build C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/bin/sdl_basic.exe: CXX_EXECUTABLE_LINKER__sdl_basic_Debug CMakeFiles/sdl_basic.dir/src/main.cpp.obj | C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3.dll.a C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3_image.dll.a C$:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3_test.a
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3.dll.a  C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3_test.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3.dll.a  C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3_image.dll.a  C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/lib/libSDL3_test.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\sdl_basic.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

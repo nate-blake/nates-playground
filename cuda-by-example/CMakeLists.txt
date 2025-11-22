@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.18)
 project(Cuda_By_Example LANGUAGES CXX CUDA)
+
+set(CMAKE_C_COMPILER "cl")
+set(CMAKE_CXX_COMPILER "cl")
+
 if(NOT MSVC)
     message(FATAL_ERROR "This project requires MSVC (Visual Studio) as the compiler.")
 endif()

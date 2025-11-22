@@ -1,2 +1,51 @@
+# ===================================================
+# Root .gitignore for CUDA + CMake + Python + MSVC
+# ===================================================
+
+# ----------------------
+# Build artifacts
+# ----------------------
 build/
-bin/*.exe
+bin/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.obj
+*.o
+*.lib
+*.dll
+*.pdb
+
+# ----------------------
+# Executables
+# ----------------------
+*.exe
+*.out
+*.app
+
+# ----------------------
+# Editor/IDE folders
+# ----------------------
+.vscode/
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+
+# ----------------------
+# Python caches
+# ----------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ----------------------
+# Logs and temporary files
+# ----------------------
+*.log
+*.tmp
+*.temp
+*.swp
+*.bak

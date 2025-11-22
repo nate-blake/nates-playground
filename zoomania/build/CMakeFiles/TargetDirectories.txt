@@ -1,3 +1,0 @@
-C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/build/CMakeFiles/sdl_basic.dir
-C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/build/CMakeFiles/edit_cache.dir
-C:/Users/nates/OneDrive/Documents/repos/nates-playground/zoomania/build/CMakeFiles/rebuild_cache.dir

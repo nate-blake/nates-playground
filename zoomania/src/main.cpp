@@ -15,8 +15,8 @@
 #include<App.hpp>
 
 
-#define WINDOW_WIDTH 640
-#define WINDOW_HEIGHT 480
+#define WINDOW_WIDTH 1920
+#define WINDOW_HEIGHT 1080
 
 /// @brief 
 /// @param argc 
@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
     SDL_Window * app_window = appInstance->getWindow();
     SDL_Renderer * app_renderer = appInstance->getRenderer();
     // Create window and renderer (appTitle, w, h , windowType, x , x)
-    SDL_CreateWindowAndRenderer(APP_NAME.c_str(), 2000, 500, 0, &app_window, &app_renderer);
+    SDL_CreateWindowAndRenderer(APP_NAME.c_str(), WINDOW_WIDTH, WINDOW_HEIGHT, 0, &app_window, &app_renderer);
 
     // Set the working directory
     const char *new_wd = WORKING_DIR.c_str(); // Replace with your project root

@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 project(SDLBasicExample)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_C_COMPILER "gcc")
+set(CMAKE_CXX_COMPILER "g++")
+
 
 add_executable(sdl_basic src/main.cpp)
 
@@ -24,10 +25,11 @@ file(GLOB_RECURSE ALL_HEADERS
 )
 
 file(GLOB_RECURSE ALL_DLLS
-    "${SDL3_BIN}/*.dlls"
+    "${SDL3_BIN}/*.dll"
 )
 
 message("Found headers: ${ALL_HEADERS}")
+message("Found DLLS: ${ALL_DLLS}")
 
 target_include_directories(sdl_basic PUBLIC ${SDL3_SRC})
 target_include_directories(sdl_basic PUBLIC ${SDL3_INCLUDE_DIR})
@@ -41,7 +43,19 @@ target_link_libraries(sdl_basic PRIVATE ${MY_LIB_FILES})
 target_link_libraries(sdl_basic PRIVATE ${ALL_DLLS})
 
 
+# === Copy DLLs to the output directory for each configuration ===
+foreach(CONFIG_TYPE Debug Release RelWithDebInfo MinSizeRel)
+    foreach(DLL_FILE ${ALL_DLLS})
+        add_custom_command(TARGET sdl_basic POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                "${DLL_FILE}"
+                "${CMAKE_BINARY_DIR}/bin/${CONFIG_TYPE}"
+            COMMENT "Copying ${DLL_FILE} to $<TARGET_FILE_DIR:sdl_basic>/${CONFIG_TYPE}"
+        )
+    endforeach()
+endforeach()
+
 # Optional: set executable output directory
-set_target_properties(sdl_basic PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
-)
+# set_target_properties(sdl_basic PROPERTIES
+#     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
+# )

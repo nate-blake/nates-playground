@@ -1,0 +1,40 @@
+owner,player,points,reason,episode
+Nate,Mike White,5,EpTitle,1
+Ian,Genevieve,5,Idol,1
+Nate,Q,3,Journey,1
+Rachel,Coach,3,Journey,1
+Rachel,Ozzy,3,Journey,1
+Rachel,Cirie,5,Advantage,1
+,Vatu,2,TribeReward,1
+,Kalo,3,TribeImmu,1
+,Cila,-1,TribeLoss,1
+Rachel,Jenna,-4,Out,1
+,Cila,3,CorrectVote,1
+Nate,Q,-1,VoteLoss,1
+Nate,Colby,-1,VoteLoss,1
+Nate,Ozzy,-1,VoteLoss,1
+Ian,Savannah,5,Advantage,1
+Nate,Colby,3,Journey,1
+Ian,Savannah,3,Journey,1
+Nate,Mike White,3,Journey,1
+Nate,Christian,5,EpTitle,2
+Nate,Christian,5,Idol,2
+,Vatu,3,TribeImmu,2
+,Kalo,3,TribeImmu,2
+,Vatu,2,TribeReward,2
+,Cila,-1,TribeLoss,2
+,Cila,3,CorrectVote,2
+Ian,Savannah,-4,Out,2
+Nate,Christian,5,EpTitle,3
+,Vatu2,3,CorrectVote,3
+Nate,Q,-4,Out,3
+,Cila2,3,TribeImmu,4
+Ian,Genevieve,5,Idol,4
+Nate,Christian,5,EpTitle,4
+,Kalo2,2,TribeReward,4
+Nate,Mike White,-4,Out,4
+Rachel,Emily,3,CorrectVote,4
+Nate,Christian,3,CorrectVote,4
+Nate,Stephanie,3,CorrectVote,4
+Ian,Charlie,5,EpTitle,5
+,Kalo2,3,TribeImmu,5
